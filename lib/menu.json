@@ -1,0 +1,22 @@
+{
+  "highlights": [
+    { "name_en": "V60 Ethiopian", "name_ar": "V60 إثيوبي", "desc_en": "Bright · floral · clean", "desc_ar": "منعش · زهري · نقي", "price_en": "EGP 180", "price_ar": "180 ج.م" },
+    { "name_en": "Passion Fruit Mojito", "name_ar": "موهيتو باشن فروت", "desc_en": "Fresh lime · mint · sparkle", "desc_ar": "ليمون طازج · نعناع · فوّار", "price_en": "EGP 165", "price_ar": "165 ج.م" },
+    { "name_en": "Lotus Dessert", "name_ar": "حلى اللوتس", "desc_en": "Silken cream · caramel biscuit", "desc_ar": "كريمة حريرية · بسكويت كراميل", "price_en": "EGP 220", "price_ar": "220 ج.م" }
+  ],
+  "categories": [
+    { "en": "All", "ar": "الكل" },
+    { "en": "Coffee", "ar": "قهوة" },
+    { "en": "Cold Drinks", "ar": "مشروبات باردة" },
+    { "en": "Mojitos / Refreshments", "ar": "كوكتيلات / مشروبات منعشة" },
+    { "en": "Desserts", "ar": "حلويات" },
+    { "en": "Food", "ar": "أكلات" }
+  ],
+  "items": [
+    { "category": "Coffee", "name_en": "Menu items coming soon", "name_ar": "أصناف القهوة قريبًا", "desc_en": "Our full coffee menu will be added here.", "desc_ar": "قائمة القهوة الكاملة ستُضاف هنا قريبًا.", "price": "—" },
+    { "category": "Cold Drinks", "name_en": "Menu items coming soon", "name_ar": "أصناف المشروبات الباردة قريبًا", "desc_en": "Our full cold drinks menu will be added here.", "desc_ar": "قائمة المشروبات الباردة الكاملة ستُضاف هنا قريبًا.", "price": "—" },
+    { "category": "Mojitos / Refreshments", "name_en": "Menu items coming soon", "name_ar": "أصناف الكوكتيلات قريبًا", "desc_en": "Our full refreshments menu will be added here.", "desc_ar": "قائمة المشروبات المنعشة الكاملة ستُضاف هنا قريبًا.", "price": "—" },
+    { "category": "Desserts", "name_en": "Menu items coming soon", "name_ar": "أصناف الحلويات قريبًا", "desc_en": "Our full dessert menu will be added here.", "desc_ar": "قائمة الحلويات الكاملة ستُضاف هنا قريبًا.", "price": "—" },
+    { "category": "Food", "name_en": "Menu items coming soon", "name_ar": "أصناف الأكلات قريبًا", "desc_en": "Our full food menu will be added here.", "desc_ar": "قائمة الأكلات الكاملة ستُضاف هنا قريبًا.", "price": "—" }
+  ]
+}
