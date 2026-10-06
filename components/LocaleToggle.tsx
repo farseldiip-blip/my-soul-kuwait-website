@@ -1,15 +1,18 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
+import { useLocale } from 'next-intl'
+import { usePathname } from '@/i18n/navigation'
+import { routing } from '@/i18n/routing'
 
 export function LocaleToggle() {
   const pathname = usePathname()
-  const isAr = pathname === '/ar' || pathname.startsWith('/ar/')
-  const rest = isAr ? pathname.slice(3) || '/' : pathname
-  const target = isAr ? rest : rest === '/' ? '/ar' : `/ar${rest}`
+  const locale = useLocale()
+  const nextLocale = routing.locales.find((item) => item !== locale)
+  const prefix = `/${nextLocale}`
+  const target = pathname === '/' ? prefix : `${prefix}${pathname}`
   return (
-    <a className="lang-toggle" href={target} dir={isAr ? 'ltr' : 'auto'}>
-      {isAr ? 'EN' : 'عربي'}
+    <a className="lang-toggle" href={target} dir={locale === 'ar' ? 'ltr' : 'auto'}>
+      {locale === 'ar' ? 'EN' : 'عربي'}
     </a>
   )
 }
