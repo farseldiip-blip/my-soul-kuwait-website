@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import { ArrowLeft, ArrowUpRight } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { useLocale, useTranslations } from 'next-intl'
 import { menuCategoryImages } from '@/lib/images'
 import { LocaleToggle } from '@/components/LocaleToggle'
@@ -59,7 +59,7 @@ export default function MenuPage() {
         })}
       </section>
 
-      <section className="menu-page-note"><p className="eyebrow">{t('noteTitle')}</p><p>{t('noteBody')}</p><a className="text-link" href={ar ? '/ar' : '/'}>{t('noteLink')} <ArrowUpRight size={16} /></a></section>
+      <section className="menu-page-note"><p className="eyebrow">{t('noteTitle')}</p><p>{t('noteBody')}</p><a className="text-link" href={ar ? '/ar' : '/'}>{t('noteLink')}</a></section>
       <footer className="footer"><p>{t('footerCopy1')}<br />{t('footerCopy2')}</p><span className="footer-copy">{t('copyright')}</span></footer>
     </main>
   )

@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { ArrowUpRight, Clock3, MapPin, Star } from 'lucide-react'
+import { Clock3, MapPin, Star } from 'lucide-react'
 import { getTranslations } from 'next-intl/server'
 import { setRequestLocale } from 'next-intl/server'
 import { galleryImages, heroImage, logo, menuHighlightImages, visitImage } from '@/lib/images'
@@ -31,7 +31,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="nav-side">
           <LocaleToggle />
           <a className="nav-cta" href={MAPS_URL} target="_blank" rel="noreferrer">
-            {tN('cta')} <ArrowUpRight size={15} strokeWidth={1.5} />
+            {tN('cta')}
           </a>
         </div>
       </header>
@@ -44,7 +44,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
           <Image src={logo.src} alt={tA('logo')} width={1080} height={1080} className="hero-logo" priority />
           <p className="hero-intro">{t('intro')}</p>
           <div className="hero-actions">
-            <a className="button button-gold" href={ar ? '/ar/menu' : '/menu'}>{t('viewMenu')} <ArrowUpRight size={16} /></a>
+            <a className="button button-gold" href={ar ? '/ar/menu' : '/menu'}>{t('viewMenu')}</a>
             <a className="button button-outline" href={MAPS_URL} target="_blank" rel="noreferrer">{t('cta')} <MapPin size={16} /></a>
           </div>
         </div>
@@ -70,7 +70,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
         <div className="menu-heading">
           <div className="section-label"><span>03</span><span>{t('counterLabel')}</span></div>
           <h2>{t('counterTitleA')}<br /><em>{t('counterTitleEm')}</em></h2>
-          <a href={ar ? '/ar/menu' : '/menu'} className="text-link">{t('viewMenu')} <ArrowUpRight size={16} /></a>
+          <a href={ar ? '/ar/menu' : '/menu'} className="text-link">{t('viewMenu')}</a>
         </div>
         <div className="menu-list">
           {menu.highlights.map((item, index) => (
@@ -97,7 +97,7 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
 
       <section className="visit section-pad" id="visit">
         <div className="visit-image" role="img" aria-label={tA('visit')} style={{ backgroundImage: `url(${visitImage.src})`, backgroundPosition: visitImage.position }} />
-        <div className="visit-content"><div className="section-label"><span>05</span><span>{t('visitLabel')}</span></div><h2>{t('visitTitleA')}<br /><em>{t('visitTitleEm')}</em></h2><div className="address"><MapPin size={18} /><p>{t('address1')}<br />{t('address2')}</p></div><div className="hours"><Clock3 size={18} /><p>{t('hours')}<br /><span>{t('hoursSub')}</span></p></div><a className="button button-gold" href={MAPS_URL} target="_blank" rel="noreferrer">{t('cta')} <ArrowUpRight size={16} /></a></div>
+        <div className="visit-content"><div className="section-label"><span>05</span><span>{t('visitLabel')}</span></div><h2>{t('visitTitleA')}<br /><em>{t('visitTitleEm')}</em></h2><div className="address"><MapPin size={18} /><p>{t('address1')}<br />{t('address2')}</p></div><div className="hours"><Clock3 size={18} /><p>{t('hours')}<br /><span>{t('hoursSub')}</span></p></div><a className="button button-gold" href={MAPS_URL} target="_blank" rel="noreferrer">{t('cta')}</a></div>
       </section>
 
       <footer className="footer"><Image src={logo.src} alt={tA('logo')} width={1080} height={1080} className="footer-logo" /><p>{t('footerCopy1')}<br />{t('footerCopy2')}</p><a href="https://www.instagram.com/mysoul.cafe/" target="_blank" rel="noreferrer" aria-label={tA('instagram')} className="instagram-link ltr">@mysoul.cafe</a><span className="footer-copy">{t('copyright')}</span></footer>
